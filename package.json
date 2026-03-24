@@ -9,7 +9,7 @@
     "lint": "eslint",
     "fmt": "prettier --write .",
     "publish": "gh-pages -d out",
-    "build": "next build && next export -o out"
+    "build": "next build"
   },
   "dependencies": {
     "@mui/icons-material": "^7.3.6",
