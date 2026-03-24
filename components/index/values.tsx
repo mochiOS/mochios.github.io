@@ -25,7 +25,7 @@ export function ValueSection() {
               <Users className="w-8 h-8 text-white" />
             </div>
             <h3 className="text-2xl font-semibold mb-4">
-              Open &amp; Flat Culture
+              Open &amp; Flat Community
             </h3>
             <p className="text-lg font-light text-gray-600 dark:text-gray-400">
               We foster an environment where everyone&apos;s voice matters and

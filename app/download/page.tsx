@@ -1,13 +1,17 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 
 export default function DownloadPage() {
   return (
+    <>
+    <Header></Header>
     <main className="min-h-screen bg-white dark:bg-black pt-24 py-32 px-4">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-5xl md:text-6xl font-semibold mb-6">Download</h1>
         <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-          Get mochiOS — a crash-resistant, fast, and elegant operating system.
+          Get mochiOS - a crash-resistant, fast, and elegant operating system.
           Choose a prebuilt image or build from source.
         </p>
 
@@ -35,5 +39,7 @@ export default function DownloadPage() {
         </section>
       </div>
     </main>
+    <Footer></Footer>
+    </>
   );
 }
