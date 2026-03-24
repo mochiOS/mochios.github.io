@@ -5,16 +5,18 @@
   "packageManager": "pnpm@10.11.1",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "fmt": "prettier --write ."
+    "fmt": "prettier --write .",
+    "publish": "gh-pages -d out",
+    "build": "next build && next export -o out"
   },
   "dependencies": {
     "@mui/icons-material": "^7.3.6",
     "@radix-ui/react-slot": "^1.2.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.559.0",
     "next": "^16.2.1",
     "react": "18.2.0",
