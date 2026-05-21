@@ -1,0 +1,80 @@
+              Shared-Credit Proprietary License
+                      Version 1.0, Draft
+
+1. Definitions
+    For the purposes of this License, 
+    the following terms shall have the meanings defined below:
+
+    "Software" Refers to the source code, documentation, 
+    and all related files to which this License is applied.
+
+    "Owner": Refers to the individual or entity that holds
+    the copyright to the Software 
+    and has published it under this License.
+
+    "Contributor": Refers to any individual or entity that,
+    with the consent of the Owner, provides modifications,
+    additions, documentation, or other improvements
+    (hereinafter "Contributions") to the Software.
+    
+    "User": Refers to any individual or entity that views,
+    clones, or uses the Software for personal, non-commercial
+    purposes.
+
+2. Ownership and Restrictions
+    Redistribution, publication, or sale of any part of
+    the Software to any third party is prohibited without
+    the Owner's permission.
+
+    Duplication of the Software (including but not limited
+    to forking, cloning, or copying by any means) is
+    permitted only if:
+
+        (a) The intent is to contribute to the development
+            or improvement of this Software; or
+
+        (b) The duplicate is for private use and is not
+            made available to any third party.
+
+    Any form of duplication intended for independent
+    distribution or re-publishing, without the intent
+    to contribute to this project, is strictly prohibited
+    regardless of the platform, medium, or method used.
+
+3. Contributor Rights
+    The Owner acknowledges that the value of this Software
+    is enhanced by the community. To honor those who help,
+    the following rights are granted to Contributors:
+
+        (a) Right to Attribution: The Owner shall permanently
+            display the Contributor's name or account identifier
+            in an appropriate location within the Software
+            (e.g., a Contributors file, readme, 
+            or source code comments) to officially recognize 
+            their work.
+
+        (b) Independence of Authored Work: Each Contributor
+            retains the full right to use, modify,
+            and redistribute the specific portions of the code
+            they authored, provided that such portions do not
+            contain or derive from the Owner's original Software.
+            This right is independent of this License,
+            and the Contributor does not require
+            the Owner's permission to use their
+            own original work elsewhere.
+
+        (c) License Grant to Owner: By providing a Contribution,
+            the Contributor grants the Owner a non-exclusive,
+            royalty-free, perpetual, irrevocable, transferable,
+            and sublicensable license to use, modify, distribute,
+            and sublicense said Contribution as part of the
+            Software under the terms of this License.
+
+4. Disclaimer
+    The Software is provided "as is",
+    without warranty of any kind.
+    In no event shall the Owner or Contributors be liable
+    for any claim, damages, or other liability arising
+    from the use of the Software.
+
+Copyright (c) 2026 tas0dev
