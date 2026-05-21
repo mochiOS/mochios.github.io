@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mochiOS - Contribute</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="window.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+    .bento-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .bento-cell.wide {
+      width: 100%;
+      max-width: 900px;
+    }
+    .bento-cell-body.full-width {
+      max-width: 100%;
+    }
+    .bento-cell-body p {
+      margin-bottom: 16px;
+    }
+    .bento-cell-body p:last-child {
+      margin-bottom: 0;
+    }
+    .bento-cell-body a {
+      color: var(--black);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+    .bento-cell-body a:hover {
+      color: var(--gray-400);
+    }
+    .bento-cell-body code {
+      background: rgba(0,0,0,0.06);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+      font-size: 13px;
+      color: var(--gray-600);
+    }
+    .bento-cell-body ol {
+      margin: 0 0 16px 24px;
+      line-height: 1.7;
+    }
+    .bento-cell-body li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="nav-logo" href="#">mochiOS</a>
+  <ul class="nav-links">
+    <li><a href="index.html#features">機能</a></li>
+    <li><a href="index.html#architecture">設計</a></li>
+    <li><a href="index.html#philosophy">哲学</a></li>
+    <li><a href="index.html#docs">ドキュメント</a></li>
+  </ul>
+  <a class="nav-cta" href="index.html#download">今すぐ見る</a>
+</nav>
+
+<div id="features" class="section-intro reveal">
+  <p class="section-eyebrow">How to contribute</p>
+  <h2 class="section-title">mochiOS Contributing Guideline</h2>
+  <p class="section-body" style="max-width: 680px;">
+    まず、mochiOSはあらゆる貢献を歓迎します。<br>
+    なぜなら、このOSはオープンで、あらゆる学習者、開発者、学生にとってコードを書いたり、参入したりしやすいOSを目指しているからです。<br><br>
+    そして、mochiOSへ貢献する方法は多岐にわたります。<br>
+    ここでは、その中の3つをピックアップしてそれぞれの貢献の仕方、やって欲しいこと、やらないで欲しいことを書いています。<br>
+    もちろん、ここに書かれていない貢献の仕方でも構いません！どんなコントリビュートでも歓迎します。
+  </p>
+</div>
+
+<div class="bento reveal">
+  <div class="bento-grid">
+    <div class="bento-cell wide">
+      <p class="bento-cell-tag">Method 01</p>
+      <h3 class="bento-cell-title">バグを報告する</h3>
+      <div class="bento-cell-body full-width">
+        <p>Githubの<a href="https://github.com/tas0dev/mochiOS/issues" target="_blank" rel="noopener noreferrer">issue</a>に以下の手順で報告してください。</p>
+        <ol>
+          <li><code>New issue</code>を押す</li>
+          <li><code>バグの報告</code>を押す</li>
+          <li>タイトルの<code>Bug report:</code>の後にわかりやすいバグのタイトル（例: マウスを連打しすぎるとクラッシュする）を書く</li>
+          <li>概要、動作、発生箇所をできる限り詳細に書く（後できればシリアル出力とかスクショも欲しいですが、なくても全然構いません。また詳細にと言ってはいますが伝われば十分です！）</li>
+          <li>Createを押す</li>
+        </ol>
+        <p>これだけで終わりです。<br>これはちょっと難しいよ〜泣という方は<a href="https://discord.com/invite/EwYaEP7jBp" target="_blank" rel="noopener noreferrer">公式Discord</a>のdiscussチャンネルに投げてくれると、多分誰かが対応してくれます。</p>
+        <p>報告してくれるだけでもめちゃくちゃありがたいので、ぜひお願いします！</p>
+      </div>
+    </div>
+
+    <div class="bento-cell wide">
+      <p class="bento-cell-tag">Method 02</p>
+      <h3 class="bento-cell-title">新しいアイデアを共有する</h3>
+      <div class="bento-cell-body full-width">
+        <p>Githubの<a href="https://github.com/tas0dev/mochiOS/issues" target="_blank" rel="noopener noreferrer">issue</a>の機能の提案テンプレートを活用するか、<a href="https://discord.com/invite/EwYaEP7jBp" target="_blank" rel="noopener noreferrer">公式Discord</a>のfreechat、またはdiscussチャンネルに投げてくれると嬉しいです。<br>採用された場合はContributorsリストに載ります！</p>
+        <p>どんな些細なアイデアでも構いませんし、ジョークアイデアでもOKです。</p>
+      </div>
+    </div>
+
+    <div class="bento-cell wide">
+      <p class="bento-cell-tag">Method 03</p>
+      <h3 class="bento-cell-title">コードを書いてパッチを送信する</h3>
+      <div class="bento-cell-body full-width">
+        <p>コードのフォーマットは<code>cargo fmt</code>してれば大丈夫です。<br>ですが、できる限りよみやすく、わかりやすいコードを心がけてください。特に細かいルールはありません。</p>
+        <p>作成後はGithubの<a href="https://github.com/tas0dev/mochiOS/pulls" target="_blank" rel="noopener noreferrer">Pull Request</a>から送信してください。また、各アプリケーション（例えばDock）にコントリビュートしたいときは、そのアプリのリポジトリにPullRequestを送信してください。</p>
+        <p>
+          <strong>【AIの利用について】</strong><br>
+          AIの利用は構いませんが、自分でレビューして、そのコードに責任が持てない限りは送信しないでください。<br>
+          たまに頭の悪いパッチを送信してくる人がいますが、コミュニティは拒否します。
+        </p>
+        <p>また、<code>Co-authored-by</code>にAIのユーザー（例えばClaude）を付与したり、コミットをAI名義でしてはいけません。（誰がコードを書いたのか不明瞭になるため）</p>
+        <p>コードを書いてくれることはとても嬉しいのでお待ちしています。</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="download" class="cta-section reveal">
+  <h2 class="cta-title">OSづくりを始めよう</h2>
+  <p class="cta-sub">ソースコードはすべて公開しています。<br>fork、改造、貢献、質問、すべて歓迎します。</p>
+  <div class="cta-buttons">
+    <a href="https://github.com/tas0dev/mochiOS" class="btn-primary">GitHub で見る</a>
+    <a href="https://deepwiki.com/tas0dev/mochiOS" class="btn-ghost">ドキュメントを読む</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <p class="footer-brand">mochiOS</p>
+      <p class="footer-tagline">Rustで作られた、純粋で新たなオペレーティングシステム。クラッシュを最大限なくすことを目標にしています</p>
+    </div>
+    <div>
+      <p class="footer-col-title">プロジェクト</p>
+      <ul class="footer-links">
+        <li><a href="https://github.com/tas0dev/mochiOS">GitHub</a></li>
+        <li><a href="https://github.com/tas0dev/mochiOS/releases">リリース</a></li>
+        <li><a href="contribute.html">コントリビュート</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">コミュニティ</p>
+      <ul class="footer-links">
+        <li><a href="https://discord.gg/fxvR8BH2yG">Discord</a></li>
+        <li><a href="https://x.com/mochiOSdev">Twitter / X</a></li>
+        <li><a href="https://github.com/tas0dev/mochiOS/issues">バグ報告</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">Copyright © 2026 tas0dev. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
