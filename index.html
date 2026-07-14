@@ -39,7 +39,7 @@
 			<div class="content hero-content">
 				<p class="overline">under development</p>
 				<h1>mochiOS</h1>
-				<p class="hero-description">カメラやマイクを勝手に使われることはありません。<br>mochiOSはアプリが使える範囲を必要な分に絞るOSです</p>
+				<p class="hero-description">自由で、安心してつかえるコンピューター</p>
 				<div class="link-group">
 					<a class="text-action" href="#possibilities">目指すこと<span aria-hidden="true">›</span></a>
 					<a class="text-action" href="https://github.com/mochiOS/mochiOS" target="_blank" rel="noreferrer">開発状況<span aria-hidden="true">↗</span></a>
@@ -100,12 +100,21 @@
 							<small>Camera</small>
 						</div>
 						<div class="choice-arrow">→</div>
-						<div class="choice-files">
-							<span></span>
-							<span class="choice-selected"><small>カメラ</small></span>
-							<span></span>
+						<div class="choice-permissions">
+							<div class="choice-permission choice-allowed">
+								<span class="choice-status">○</span>
+								<span>カメラ</span>
+							</div>
+							<div class="choice-permission choice-denied">
+								<span class="choice-status">×</span>
+								<span>位置情報</span>
+							</div>
+							<div class="choice-permission choice-denied">
+								<span class="choice-status">×</span>
+								<span>ネットワークアクセス</span>
+							</div>
 						</div>
-					</div>
+          </div>
 				</article>
 
 				<article class="feature-card">
@@ -115,10 +124,30 @@
 						<p>アプリを分けて動かし、ひとつのアプリの不具合がほかのアプリやOS全体へ広がりません。</p>
 					</div>
 					<div class="isolation-visual" aria-hidden="true">
-						<span></span>
-						<span class="isolation-stopped">!</span>
-						<span></span>
-					</div>
+						<div class="isolation-app">
+							<span>A</span>
+						</div>
+
+						<div class="isolation-flow">
+							<span class="isolation-line"></span>
+							<span class="isolation-block">×</span>
+							<span class="isolation-arrow">←</span>
+						</div>
+
+						<div class="isolation-app isolation-failed">
+							<span>!</span>
+						</div>
+
+						<div class="isolation-flow">
+							<span class="isolation-arrow">→</span>
+							<span class="isolation-block">×</span>
+							<span class="isolation-line"></span>
+						</div>
+
+						<div class="isolation-app">
+							<span>B</span>
+						</div>
+          </div>
 				</article>
 
 				<article class="feature-card feature-card-dark">
