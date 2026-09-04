@@ -1,0 +1,40 @@
+<header class="site-header">
+    <div class="header-inner">
+        <a class="brand" href="/" aria-label="mochiOS home">mochiOS</a>
+
+        <nav class="primary-nav" aria-label="Primary">
+            <a href="/#about">About</a>
+            <a href="https://developer.mochios.org">Developer</a>
+            <a href="https://github.com/mochiOS">GitHub</a>
+        </nav>
+
+        <div class="header-actions">
+            <button
+                class="theme-toggle"
+                type="button"
+                aria-label="表示テーマを切り替える"
+                title="表示テーマを切り替える"
+            >
+                <span aria-hidden="true">◐</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<script is:inline>
+    (() => {
+        const root = document.documentElement;
+        const button = document.querySelector(".theme-toggle");
+        const saved = localStorage.getItem("theme");
+        const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const initialTheme = saved ?? (systemDark ? "dark" : "light");
+
+        root.dataset.theme = initialTheme;
+
+        button?.addEventListener("click", () => {
+            const next = root.dataset.theme === "dark" ? "light" : "dark";
+            root.dataset.theme = next;
+            localStorage.setItem("theme", next);
+        });
+    })();
+</script>

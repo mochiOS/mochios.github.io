@@ -1,0 +1,32 @@
+.marquee {
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.marquee-track {
+	display: flex;
+	width: max-content;
+	animation: marquee 40s linear infinite;
+}
+
+.marquee-group {
+	display: flex;
+	flex-shrink: 0;
+	gap: 4rem;
+	padding-right: 4rem;
+}
+
+.marquee-group span {
+	white-space: nowrap;
+}
+
+@keyframes marquee {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-50%);
+	}
+}
